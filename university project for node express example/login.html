@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <style>
+          
+
+            .bluepad{
+                height: 100%;
+                background-color: blue;
+            }
+            
+            .s{
+                color:white;
+                font-size: 20pt;
+            }
+            
+            .s a.active {
+                background-color: #4CAF50;
+                color: white;
+              }
+            
+              .button1{
+                  background-color: rgb(56, 89, 157);
+                  color: white;
+                  font-size: 20pt;
+              }
+            
+              .button1 :hover{
+                background-color: rgb(56, 89, 157);
+              }
+              
+              .sidebar1 {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                background-color:  rgb(56, 89, 157);
+                position: fixed;
+                height: 200px;
+                overflow: auto;
+              }
+            
+              .sidebar {
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color:  rgb(56, 89, 157);
+                position: fixed;
+                height: 100%;
+                overflow: auto;
+              }
+            
+              .sidebar a {
+                display: block;
+                color: white;
+                padding: 26px;
+                font-size: 20pt;
+                text-decoration: none;
+              }
+            
+              .sidebar img {
+                display: block;
+                
+                padding: 16px;
+                text-decoration: none;
+              }
+            
+            
+              div.content {
+               
+                margin-left: 400px;
+                padding: 1px 16px;
+                height: 1000px;
+              }
+            
+              .shift{
+                padding-left: 100pt;
+              }
+            
+              label{
+                  color: rgb(56, 89, 157);
+                  font-weight: bolder;
+              }
+            
+              a:hover{
+                color: rgb(56, 89, 157);
+                background-color: white;
+              }
+            
+              #btn1:hover{
+                 width:40%;
+                 
+              }
+              
+              label{
+                  font-size: 20pt;
+              }
+              
+              /* On screens that are less than 700px wide, make the sidebar into a topbar */
+              @media screen and (max-width: 700px) {
+                .sidebar {
+                  width: 100%;
+                  height: auto;
+                  position: relative;
+                }
+                .sidebar a{float: left;}
+                div.content {margin-left: 0;}
+              }
+              
+              /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+              @media screen and (max-width: 400px) {
+                .sidebar a{
+                    
+                  text-align: center;
+                  float: none;
+                }
+              }
+            
+              .old_pass{
+                  margin-top:200px;
+                  margin-left: 200px;
+              }
+                    </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <link rel="stylesheet" href="project_c.css">
+    </head>
+    <body>
+            <div class="sidebar1">
+                    <img src="download.png" alt="login" height="100" width="100">
+                
+                  </div>
+
+                  
+                        <div class="content">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            <form action="project" method="POST" class="was-validated" style="width: 200pt">
+                              <div class="form-group">
+                                <label for="oldpass">Email</label>
+                                <input type="email" class="form-control" id="old_pass" placeholder="Enter email" name="oldpassword" required>
+                               
+                              </div>
+                              <div class="form-group">
+                                <label for="pwd">Enter Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd" required>
+                                
+                              </div>
+                            
+                              <button type="submit" id="btn1" class="btn btn-primary" style="margin-left:25%;margin-top:10%; background-color :rgb(56, 89, 157)">Login</button>
+                            </form>
+                          </div>
+                    
+                      
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
